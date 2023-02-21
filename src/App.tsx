@@ -1,19 +1,21 @@
 // import React from 'react';
 // import logo from './logo.svg';
 
-import { 
+import {
   IonButton,
-  IonCard, 
-  IonCardContent, 
-  IonCardHeader, 
-  IonCardSubtitle, 
-  IonCardTitle, 
-  IonContent, 
-  IonDatetime, 
-  IonFooter, 
+  IonCard,
+  IonCardContent,
+  IonCardHeader,
+  IonCardSubtitle,
+  IonCardTitle,
+  IonContent,
+  IonDatetime,
+  IonFooter,
   IonHeader,
+  IonPage,
   IonTitle,
-  IonToolbar} from '@ionic/react';
+  IonToolbar
+} from '@ionic/react';
 
 import './App.css';
 
@@ -35,37 +37,28 @@ import '@ionic/react/css/display.css';
 const App = () => {
   return (
     <>
-  
-   
-   <IonHeader>
+    <IonPage>
+      <IonHeader>
         <IonToolbar>
-          <IonTitle>Header</IonTitle>
+          <IonTitle>Tca Farkle Companion App</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
         <h1>Content</h1>
-          <IonCard>
-      <IonCardHeader>
-        <IonCardTitle>Tca Farkle Companion App</IonCardTitle>
-        <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
-      </IonCardHeader>
+        <IonCard>
+          <IonCardHeader>
+            <IonCardTitle>Tca Farkle Companion App</IonCardTitle>
+            <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+          </IonCardHeader>
 
-      <IonCardContent>
-        Here's a small text description for the card content. Nothing more, nothing less.
-        <IonDatetime></IonDatetime>
-        <IonButton color="success">Start Game</IonButton>
-      </IonCardContent>
-    </IonCard>
+          <IonCardContent>
+            Here's a small text description for the card content. Nothing more, nothing less.
+            <IonDatetime></IonDatetime>
+            <IonButton color="success">Start Game</IonButton>
+          </IonCardContent>
+        </IonCard>
       </IonContent>
-      
-      
-      {/* <IonFooter>
-        <IonToolbar>
-          <IonTitle>
-            Footer
-          </IonTitle>
-        </IonToolbar>
-      </IonFooter> */}
+      </IonPage>
     </>
   );
 }

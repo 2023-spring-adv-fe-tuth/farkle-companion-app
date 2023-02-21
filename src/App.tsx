@@ -35,7 +35,16 @@ import '@ionic/react/css/display.css';
 const App = () => {
   return (
     <>
-    <IonCard>
+  
+   
+   <IonHeader>
+        <IonToolbar>
+          <IonTitle>Header</IonTitle>
+        </IonToolbar>
+      </IonHeader>
+      <IonContent className="ion-padding">
+        <h1>Content</h1>
+          <IonCard>
       <IonCardHeader>
         <IonCardTitle>Tca Farkle Companion App</IonCardTitle>
         <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
@@ -47,31 +56,16 @@ const App = () => {
         <IonButton color="success">Start Game</IonButton>
       </IonCardContent>
     </IonCard>
-   
-   <IonHeader>
-        <IonToolbar>
-          <IonTitle>
-            Header
-          </IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      {/* <IonContent className="ion-padding">
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-
-        <p>Here's a small text description for the content. Nothing more, nothing less.</p>
-      </IonContent> */}
-      <IonFooter>
+      </IonContent>
+      
+      
+      {/* <IonFooter>
         <IonToolbar>
           <IonTitle>
             Footer
           </IonTitle>
         </IonToolbar>
-      </IonFooter>
+      </IonFooter> */}
     </>
   );
 }
